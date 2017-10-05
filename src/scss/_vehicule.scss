@@ -1,0 +1,618 @@
+#vehicule{
+	.back{
+		text-decoration: none;
+		font-weight: bold;
+	}
+	hr{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		border-left: none;
+		border-right: none;
+		border-top: 1px solid $c-grey;
+		border-bottom: 1px solid $c-grey;
+	}
+	h2{
+		font-size: $font-l;
+		margin-bottom: 30px;
+		&:before{
+			content: ">>";
+			margin-right: 10px;
+		}
+		&.title-centered{
+			&:before{
+				content: "";
+			}
+		}
+	}
+	section{
+		.cell{
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+	}
+	.cell{
+		&.content-info{
+			align-items: center;
+			.stage{
+				overflow: hidden;
+				width: 50%;
+				max-width: 584px;
+				height: 100vh;
+				max-height: 439px;
+				margin-bottom: 10px;
+				background-color: $c-grey-light;
+				position: relative;
+				ul{
+					display: block;
+					width: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					transition: left 0.3s ease-in;
+					li{
+						display: block;
+						float: left;
+						img{
+							display: block;
+							width: 100%;
+							height: auto;
+							pointer-events: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	.content-vehicule{
+		margin-bottom: 30px;
+	}
+	.info-vehicule.cell{
+		padding-left: 50px;
+		flex-direction: column;
+		*{
+			font-family: 'FORsmartBold';
+			font-weight: bold;
+		}
+		.price-vehicule{
+			color: $c-yellow;
+			font-size: $font-l;
+		}
+		.finance-vehicule{
+			font-size: $font-n;			
+		}
+		.spec-vehicule{
+			padding-top: 20px;
+			flex-direction: column;
+			ul{
+				margin-bottom: 10px;
+			}
+			li{
+			}
+			strong{
+				margin-bottom: 20px;
+				span{
+					font-family: 'FORsmartSpecial';
+					font-weight: normal;
+				}
+			}
+		}
+		.btn{
+			border-color: $c-yellow;
+		}
+	}
+	.stage-controller{
+		width: 100%;
+		min-height: 80px;
+		order: 2;
+		a{
+			cursor: pointer;
+			position: relative;
+			display: inline-block;
+			line-height: 0;
+			&:after{
+				content: "";
+				position: absolute;
+				bottom: 0px;
+				left: 0;
+				display: block;
+				width: 0;
+				height: 4px;
+				background-color: $c-yellow;
+				transition: width 0.3s ease-in;
+			}
+			&.actif{
+				&:after{
+					width: 100%;
+				}
+			}
+			.minus{
+				width: 89px;
+				height: 67px;
+				pointer-events: none;
+			}
+		}
+	}
+
+	.content-technical{
+		margin-bottom: 30px;
+		.content{
+			padding-bottom: 30px;
+			background-color: $c-grey;			
+			padding-top: 30px;
+		}
+		h2{
+			padding-top: 20px;
+			padding-left: 50px;
+			padding-bottom: 14px;
+			margin-bottom: 0;
+			border-bottom: 1px solid $c-white;
+			background-color: $c-grey;			
+		}
+		.option-list{
+			justify-content: space-between;
+			li{
+				width: 25%;
+				margin-bottom: 30px;
+				&:nth-child(3n+2) {
+					width: 38%;
+				}
+				sup{
+					line-height: 5px;
+				}
+			}
+		}
+		.content-option{
+
+		}
+	}
+
+	.content-financial{
+		margin-bottom: 30px;
+	}
+	.content-localisation{
+		margin-bottom: 30px;
+		.cell{
+		}
+		h2{
+			width: 100%;
+		}
+		.map{
+			width: 50%;
+			height: 345px;
+			background-color: $c-grey-light;
+		}
+		.info-localisation{
+			flex-direction: column;
+			width: 50%;
+			padding: 0 0 0 30px;
+			h3{
+				margin-bottom: 10px;
+				span{
+					display: block;
+					padding-top: 8px;
+					font-weight: normal;
+				}
+			}
+			p{
+				margin-bottom: 15px;
+			}
+			strong{
+				margin-bottom: 8px;
+			}
+		}
+	}
+
+	.content-contact{
+		padding-top: 65px;
+		padding-bottom: 110px;
+		margin-bottom: 30px;
+		background-color: $c-grey-darker;
+		*{
+			color: $c-white;
+		}
+		.msgSend{
+			display: none;
+		}
+		form{
+			display: block;
+		}
+		.msgError{
+			visibility: hidden;
+			color: $c-red;
+			&.showMsg{
+				visibility: visible;
+			}
+		}
+		ul.cell{
+			margin-bottom: 60px;
+			.cell{
+				margin-right: 10px;
+				strong{
+					margin-right: 10px;
+				}
+				a{
+					text-decoration: none;
+				}			
+			}
+		}
+		label{
+			font-size: $font-n;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		textarea{
+			resize: none; 
+		}
+		input[type="text"],
+		input[type="number"],
+		input[type="email"]{
+			height: 50px;
+			&[disabled="disabled"]{
+				background-color: $c-grey-dark-input;
+				color: $c-white;
+				border: 2px solid $c-black;
+			}
+			&.error{
+				border-color: $c-red;
+			}
+		}
+		input[type="text"],
+		input[type="number"],
+		input[type="email"],
+		textarea{
+			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			  font-weight: normal;
+			}
+			&::-moz-placeholder { /* Firefox 19+ */
+			  font-weight: normal;
+			}
+			&:-ms-input-placeholder { /* IE 10+ */
+			  font-weight: normal;
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+			  font-weight: normal;
+			}
+			outline: none;
+			padding: 10px;
+			color: $c-black-vo;
+			font-weight: bold;
+			width: 100%;
+			margin-bottom: 25px;
+		}
+		.content-form{
+			justify-content: space-between;
+			width: 100%;
+			max-width: 790px;
+			.cell{
+				width: 50%;
+				max-width: 288px;
+				flex-direction: column;
+				input[type="text"]{
+					max-width: 288px;
+				}
+			}
+			.cell-row{
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: center;
+				width: 100%;
+				margin-bottom: 20px;
+				max-width: 300px;
+				label{
+					margin-bottom: 0;
+				}
+				input{
+					margin-right: 10px;
+				}
+			}
+			.cell-large{
+				width: 100%;
+				max-width: 100%;
+				input[type="text"]{
+					max-width: 100%;
+				}
+			}
+			.cell-reverse{
+				flex-direction: row;
+				align-items: flex-start;
+				justify-content: space-between;
+				width: 100%;
+				max-width: 100%;
+			}
+		}
+	}
+	
+	.so-smart-financial{
+		margin-bottom: 40px;
+		h2{
+			display: block;
+			width: 232px;
+			height: 131px;
+			overflow: hidden;
+			text-indent: -9000px;
+			background: url('../img/so-smart.png') 0 0 no-repeat;
+			background-size: cover;
+			margin-bottom: 45px;
+		}
+		ul{
+			display: flex;
+			width: 80%;
+			flex-wrap: wrap;
+			li{
+				display: flex;
+				width: 33%;
+				padding-right: 30px;
+				margin-bottom: 20px;
+				align-items: center;
+				font-weight: bold;
+				&:nth-child(3n + 3){
+					padding-right: 0px;
+				}
+				&:before{
+					content: "";
+					display: inline-block;
+					margin-right: 10px;
+					width: 24px;
+					height: 24px;
+					flex: 0 0 24px;
+					background: url('../img/arrow-circle.svg') 0 0 no-repeat;
+					background-size: cover;
+				}
+			}
+		}
+	}
+	.so-smart{
+		height: auto;
+		max-height: inherit;
+		max-width: 1280px;
+		padding: 0 50px;
+		align-items: center;
+		justify-content: flex-start;
+		background: none;
+		.cell{
+			align-items: stretch;
+			background: none;
+			width: 50%;
+			padding: 25px 35px;
+			max-width: 100%;
+			h2,
+			p{
+				text-shadow: none;
+				color: $c-black-vo;
+				margin-bottom: 25px;
+			}
+			p{
+				margin-bottom: 20px;		
+			}
+		}
+	}
+	@media screen and (max-width: $break-large){
+		.so-smart{
+			padding: 0 20px;
+		}
+		.content-technical{ 
+			.option-list{
+				strong{
+					display: block;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: $break-medium){
+		.cell.content-info{
+			flex-direction: column;
+			.stage{
+				width: 100%;
+			}
+		}
+		.content-technical{ 
+			.content, h2{
+				padding-right: 20px;
+				padding-left: 20px;
+			}
+			.option-list{ 
+				li{
+					margin-bottom: 15px;
+					width: 45%;
+					&:nth-child(3n+2){
+						width: 45%;
+					}
+				}
+			}
+		}
+		.image-vehicule{
+			order: 0;
+			width: 100%;
+			max-width: 584px;
+			img{
+				width: 100%;
+			}
+		}
+		.stage-controller{
+			order: 1;
+			padding: 10px 0;
+			display: flex;
+			justify-content: center;
+			a, a.actif{
+				margin: 0 10px;
+				&:after{
+					content:"";
+					position: relative;
+					width: 18px;
+					height: 18px;
+					border-radius: 50%;
+					display: block;
+					background-color: $c-grey;
+				}
+				img{
+					display: none;
+				}
+			}
+			a.actif{
+				&:after{
+					background-color: $c-yellow;
+				}
+			}
+		}
+		.content-option{
+			p{
+				width: 100%;
+			}
+		}
+		.info-vehicule.cell{
+			order: 2;
+			position: relative;
+			width: 100%;
+			max-width: 584px;
+			padding-left: 0;
+			.spec-vehicule{
+				strong{
+					padding-right: 220px;
+					margin-bottom: 0;				
+				}
+			}
+			.btn{
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				padding: 2vw 1.8vw;
+			}
+		}
+		.content-contact{
+			padding-bottom: 90px;
+			.content-form{
+				.cell{
+					width: 45%;
+					&.cell-large,
+					&.cell-reverse,
+					&.cell-row{
+						width: 100%;
+					}
+				}
+			}			
+		}
+		.so-smart{
+			max-height: inherit;
+			padding: 0 10px;
+			flex-direction: column;
+			img{
+				width: 100%;
+			}
+			.cell{
+				flex-direction: row;
+			    flex-wrap: wrap;
+			    width: auto;
+			    padding: 0;
+				h2{
+					flex: 1 0 100%;
+				}
+				p{
+					padding-right: 0;
+					padding-bottom: 0px;
+					margin-bottom: 0px;
+					flex: 1 0 50%;
+				    padding-right: 15px;
+				}
+				.btn{
+					position: relative;
+					align-self: flex-end;
+				}
+			}
+			
+		}
+		.so-smart-financial{ 
+			ul{
+				width: 100%;
+				li{
+					padding-right: 10px;
+				}
+			}
+		}
+		.content-technical{ 
+			.option-list{
+				strong{
+					display: inline;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: $break-small){
+		/*reset font-size*/
+		$font-s : 12px;
+		$font-n : 14px;
+		$font-l : 16px;
+		$font-xl : 20px;
+		.so-smart-financial{ 
+			ul{
+				li{
+					align-items: flex-start;
+					line-height: 12px;
+					&:before{
+						width: 12px;
+						height: 12px;
+						flex: 0 0 12px;
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+		h2{
+			font-size: $font-xl;
+		}
+		.content-contact label,
+		.info-vehicule.cell *{
+			font-size: $font-l;
+			line-height: inherit;
+		}
+		/*END reset font-size*/
+		.btn{
+			max-width: 160px;
+			font-size: $font-n;
+		}
+		.content-localisation{
+			.cell{
+				flex-direction: column;
+				.map,
+				.info-localisation{
+					width: 100%;
+				}
+				.info-localisation{
+					padding: 30px 0 0;
+				}
+			}
+		}
+		.info-vehicule.cell .spec-vehicule strong{
+			padding-right: 170px;
+		}
+		.content-contact {
+			padding-top: 35px;
+			padding-bottom: 45px;
+			h2{
+				margin-bottom: 20px;
+			}
+			ul.cell{
+				margin-bottom: 30px;
+			}
+			.content-form{
+				.cell-reverse{
+					justify-content: flex-end;
+					.msgError {
+						width: 100%;
+						height: 0;
+						&.showMsg{
+							height: auto;
+							margin-bottom: 10px;
+						}
+					}
+				}
+			}
+		}
+		.content-technical{ 
+			.option-list{
+				strong{
+					display: block;
+				}
+			}
+		}
+	}
+}

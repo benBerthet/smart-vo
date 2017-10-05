@@ -1,0 +1,298 @@
+@import 'webfonts';
+
+$break-large: 1030px;
+$break-medium: 960px;
+$break-small: 780px;
+/* $break-small: 640px; */
+$break-tiny: 460px;
+
+
+$c-grey: #eeeeee;
+$c-grey-light: #f3f3f3;
+$c-grey-dark: #cccccc;
+$c-grey-dark-input: #595959;
+$c-grey-darker: #323232;
+$c-black-vo: #333333;
+$c-yellow: #fbba35;
+$c-white: #fff;
+$c-black: #000;
+$c-red: #ff0000;
+
+$font-s : 14px;
+$font-n : 18px;
+$font-l : 32px;
+$font-xl : 40px;
+
+
+
+body {
+  margin: 0;
+  color: #313131;
+}
+
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'FORsmartLight','arial';
+  color: $c-black-vo;
+  font-size: $font-n;
+}
+ul{
+	li{
+		list-style-type: none;
+	}
+}
+
+select{
+	border: none;
+    box-shadow: none;
+    background-color: transparent;
+	-webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    option{
+    	&:disabled{
+    		background-color: $c-white;
+    		padding: 0;
+    	}
+    }
+}
+select::-ms-expand {
+    display: none;
+}
+
+header{
+	.cell{
+		justify-content: flex-end;
+	}
+	.logo{
+		display: block;
+		width: 66px;
+		height: 90px;
+		overflow: hidden;
+		text-indent: -9000px;
+		background: url('../img/logo-smart.jpg') top center no-repeat;
+		background-size: contain;
+	}
+	
+}
+footer {
+	background-color: $c-grey-light;
+	padding: 10px 0;
+	.container{
+		margin: 0;
+		.content{
+			padding: 0 25px;
+		}
+	}
+	li{
+		display: inline;
+		padding: 0 10px;
+		border-left: 1px solid $c-black-vo;
+		a{
+			text-decoration: none;
+			font-size: $font-s;
+		}
+		&:nth-child(1){
+			border-left: none;
+			padding-left: 0;
+		}
+
+	}
+}
+
+.cell{
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+}
+.container{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.content{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1280px;
+	padding: 0 50px;
+
+}
+.title-centered{
+	text-align: center;
+}
+h2.title-centered{
+	text-transform: uppercase;
+	font-size: $font-xl;
+}
+#layer{
+	position: fixed;
+	top: 0; left: 0;
+	z-index: 1000000;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.popin{
+		background-color: #fff;
+		display: inline-table;
+		width: 80%;
+		max-width: 400px;
+		padding: 30px 20px 30px;
+		position: relative;
+		.close{
+			position: absolute;
+			top: 10px; right: 10px;
+			cursor: pointer;
+		}
+		strong{}
+		p{
+			margin-bottom: 10px;
+		}
+		a{}
+	}
+}
+.btn{
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	max-width: 200px;
+	height: 46px;
+	line-height: 46px;
+	color: $c-white;
+	font-size: $font-n;
+	font-weight: bold;
+	text-decoration: none;
+	border: 2px solid $c-white;
+	overflow: hidden;
+	background-color: $c-yellow;
+	span{
+		color: $c-white;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		transition: all 0.3s ease-in; 
+		&:after{
+			content: ">";
+			margin-left: 10px;
+		}
+	}
+	&:after,
+	&:before{
+		content: "";		
+	}
+	&:before,
+	&:after{
+		position: absolute;
+		background-color: rgba(255,255,255,0.5);
+		transition: all 0.5s ease-in; 
+		width: 1px;
+		height: 100%;
+		top: 0px;
+	}
+	&:after{
+		left: -15px;
+		box-shadow: 0px -1px 10px 2px #fff;
+	}
+	&:before{
+		//Effet 1
+		/* width: 100%;
+		height: 1px;
+		top: -10px;
+		left: 0;*/
+		
+		//Effet 2
+		/* width: 1px;
+		height: 100%;
+		top: 0px; */
+		left: -10px;
+		box-shadow: 0px -1px 15px 1px #fff;
+
+		//Effet 3
+		/* top: 50%;
+		left: 50%;
+		width: 0px;
+		height: 0px;
+		opacity: 1;
+		border-radius: 50%; */
+	}
+	&:hover{
+		span{
+			/* font-size: 20px; */
+		}
+		&:after{
+			left: calc(100% + 10px);			
+		}
+		&:before{
+			//Effet 1
+			/* top: calc(100% + 10px); */
+			
+			//Effet 2
+			left: calc(100% + 15px);
+			
+			//Effet 3
+			/* opacity: 0;
+			top: -50%;
+			left: -50%;
+			width: 200%;
+			height: 200%; */
+		}
+	}
+}
+@media screen and (max-width: $break-large){
+	.content{
+		padding: 0 20px;
+	}
+}
+@media screen and (max-width: $break-medium){
+	footer .container .content,
+	.content{
+		padding: 0 10px;
+	}
+	.cell{
+
+	}
+}
+@media screen and (max-width: $break-small){
+	/*reset font-size*/
+	$font-s : 12px;
+	$font-n : 14px;
+	$font-l : 16px;
+	$font-xl : 20px;
+	*{
+		font-size: $font-n;
+	}
+	/*END reset font-size*/
+
+	header .logo{
+		width: 36px;
+		height: 49px;
+	}
+	footer{
+		li,
+		li:nth-child(1){
+			padding: 0;
+			border: none;
+			a{
+				font-size: $font-s;
+			}
+		}
+		li:nth-child(2){
+			padding: 0 5px;
+			margin: 0 5px;
+			border-left: 1px solid $c-black-vo;
+			border-right: 1px solid $c-black-vo;
+		}
+	}
+}
+@import 'home';
+@import 'error';
+@import 'vehicule';

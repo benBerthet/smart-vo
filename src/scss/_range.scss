@@ -1,0 +1,132 @@
+/*Slider*/
+.container-search{
+  .range-slider{
+    margin-left: -50px;
+  }  
+}
+.range-slider{
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #eee;
+  span{
+    margin-right: 14px;
+  }
+}
+#lower-price-value,
+#upper-price-value,
+#lower-km-value,
+#upper-km-value {
+  padding: 0px;
+  pointer-events: none;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  font-size: $font-n;
+  font-family: 'FORsmartSpecial';
+}
+#lower-price-value {
+  width: 70px;
+}
+#upper-price-value {
+  width: 80px;
+}
+#lower-km-value,
+#upper-km-value {
+  width: 100px;
+}
+#lower-km-value {
+  padding-left: 0px;
+}
+#upper-km-value {
+  padding-right: 0px;
+}
+.range{
+  width: 200px;
+  padding: 20px;
+}
+.content-advanced-search{
+
+  .range-slider{
+    width: 360px;
+  }
+  .range{
+    width: 160px; 
+    padding: 0 10px;
+  }
+}
+.noUi-horizontal .noUi-handle,
+.noUi-handle{
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  border: none;
+  box-shadow: none;
+  cursor: e-resize;
+}
+.noUi-horizontal .noUi-handle{
+  top: -6px;
+}
+.noUi-handle,
+.noUi-connect{
+  background-color: #ffe000;
+}
+.noUi-connect{
+  box-shadow: none;
+}
+.noUi-target{
+  background-color: white;
+  height: 6px;
+  border: none;     
+}
+.noUi-handle:after,
+.noUi-handle:before{
+  display: none;
+}
+@media screen and (max-width: $break-medium){
+  .content-advanced-search .range-slider,
+  .range-slider{
+    margin-left: 0;
+    width: auto;
+    justify-content: space-between;
+    span{
+      order: 1; 
+      margin: 0;
+    }
+    input{
+      order: 2;
+      &#upper-km-value,
+      &#lower-km-value,
+      &#upper-price-value,
+      &#lower-price-value{
+        width: 30%;
+        text-align: center;
+        background-color: $c-white;
+        border: 1px solid $c-black;
+        line-height: 20px;
+        height: 20px;
+      }
+      &#lower-km-value,
+      &#lower-price-value{
+        order: 0;
+      }
+      &#upper-price-value{
+
+      }
+    }
+    .range{
+      order: 3;
+      width: 100%;
+      padding: 20px 10px 20px 20px;
+    }
+  }
+}
+@media screen and (max-width: $break-tiny){
+  .content-advanced-search .range-slider,
+  .range-slider{
+    width: 100%;
+  }
+}

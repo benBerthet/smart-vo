@@ -1,0 +1,67 @@
+{
+	"Engine" : [
+		{
+			"Description" : "Diesel",
+			"EngineId" : "2b96c17b-c1e1-4020-8d01-061d5efaa045"
+		}, 
+		{
+			"Description" : "Electrique",
+			"EngineId" : "2b96c17b-c1e1-4020-8d01-061d5efaa045"
+		}, 
+		{
+			"Description" : "Essence",
+			"EngineId" : "2b96c17b-c1e1-4020-8d01-061d5efaa045"
+		}
+	],
+	"Gearbox" : [
+		{
+			"Description" : "Automatique",
+			"GearBoxId" : "2b96c17b-c1e1-4020-8d01-061d5efaa045"
+		}, 
+		{
+			"Description" : "Manuelle et Automatique",
+			"GearBoxId" : "2b96c17b-c1e1-4020-8d01-061d5efaa045"
+		}
+	],
+	"Model" : [
+		{
+			"Description" : "fortwo",
+			"ModelId" : "2b96c17b-c1e1-4020-8d01-061d5efaa045"
+		}, 
+		{
+			"Description" : "forfour",
+			"ModelId" : "2b96c17b-c1e1-4020-8d01-061d5efaa045"
+		}, 
+		{
+			"Description" : "fortwo cabriolet",
+			"ModelId" : "2b96c17b-c1e1-4020-8d01-061d5efaa045"
+		}
+	],
+	"PointOfSale" : [
+		{
+			"Name" : "ETOILE DU RHÔNE AUBENAS",
+			"PointOfSaleId" : "2b96c17b-c1e1-4020-8d01-061d5efaa045"
+		}, 
+		{
+			"Name" : "ETOILE DU RHÔNE MONTBELIMAR",
+			"PointOfSaleId" : "2b96c17b-c1e1-4020-8d01-061d5efaa045"
+		}, 
+		{
+			"Name" : "ETOILE DU RHÔNE ROMANS",
+			"PointOfSaleId" : "2b96c17b-c1e1-4020-8d01-061d5efaa045"
+		},{
+			"Name" : "ETOILE DU RHÔNE AUBENAS",
+			"PointOfSaleId" : "2b96c17b-c1e1-4020-8d01-061d5efaa045"
+		}, 
+		{
+			"Name" : "ETOILE DU RHÔNE MONTBELIMAR",
+			"PointOfSaleId" : "2b96c17b-c1e1-4020-8d01-061d5efaa045"
+		}, 
+		{
+			"Name" : "ETOILE DU RHÔNE ROMANS",
+			"PointOfSaleId" : "2b96c17b-c1e1-4020-8d01-061d5efaa045"
+		}
+	]
+}
+
+

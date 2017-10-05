@@ -1,0 +1,37 @@
+[
+	{
+		"VehicleId":"2b96c17b-c1e1-4020-8d01-061d5efaa045",
+		"Brand":"smart",
+		"Model":"fortwocabriolet",
+		"Price":"8800",
+		"FinancementPrice":"178.9",
+		"VehicleYear":"2016",
+		"Mileage":"16884",
+		"Engine":"Essence",
+		"GearboxType":"Automatique",
+		"Colour":"BLANCLITEWHIT",
+		"Version":"61 ch mhd Pure Softouch",
+		"VehicleReference":"722112",
+		"ImageUrl":["assets/img/big-1.jpg", "assets/img/big-2.jpg", "assets/img/big-3.jpg", "assets/img/big-4.jpg"],
+		"DoorCount":"4",
+		"SeatCount":"5",
+		"GearboxDesc":"Auto séquentielle",
+		"GearboxSpeed":"5",
+		"DateMEC":"dd/mm/yyyy",
+		"EngineFiscalPower":"4",
+		"EngineDisplacementPower":"999",
+		"Option":"Direction assistée électrique, Smart navigation/multimédia, ABS, Aide au démarrage en côte, Aide au freinage d'urgence, Airbag conducteur, Airbag passager, Antidémarrage électronique, Antipatinage, Arrêt et redémarrage auto. du moteur, Bacs de portes avant, Boite à gants fermée, Boucliers AV et AR couleur caisse, Capote électrique, Capote souple, Clim automatique, EBD, ESP, Filtre à Pollen, Jantes Alu, Kit Fumeur, Lampes de lecture à l'avant, Phares halogènes, Pommeau de levier vitesse en cuir, Prise auxiliaire de connexion audio, Prise USB, Radio CD MP3 2HP, Rétroviseurs extérieurs à réglage manuel, Siège passager rabattable, Tablette cache bagages, Température extérieure, Verrouillage auto. des portes en roulant, Verrouillage centralisé à distance, Vitres avant électriques, Vitres teintées, Volant cuir.",
+		"FinancementBlock":"aaa bbb ccc <br/> asasasd",
+		"PointOfSaleName":"Mobilité",
+		"PointOfSaleCity":"Marseille",
+		"GoogleMapLink" : "https://www.google.com/maps?ll=43.928784,4.835878&z=16&t=m&hl=fr-FR&gl=FR&mapclient=embed&cid=14089236360158203133",
+		"CommercialHours" :"xxxxx <br/> xxxxx",
+		"CommercialTel":"0123456789",
+		"CommercialFax":"0123456789",
+		"AtelierHours" :"xxxx <br/> xxxxxx",
+		"AtelierTel" : "0123456789",
+		"AtelierFax": "0123456789",
+		"PointOfSaleContacts":[{"Name":"YYYY","Telephone":"0123456789"},{"Name":"XXXXX","Telephone":"0123456789"}]
+	}
+
+]

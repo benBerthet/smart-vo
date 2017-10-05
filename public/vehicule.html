@@ -1,0 +1,247 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>smart - Véhicule d'occasion</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta name="HandheldFriendly" content="true">
+        <!-- OG : START -->
+        <meta property="og:url" content="">
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <!-- og:image url must be ABSOLUTE -->
+        <meta property="og:image" content="http://">
+        <meta property="og:image:width" content="600">
+        <meta property="og:image:height" content="315">
+    <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore    (j,f);
+        })(window,document,'script','dataLayer','GTM-W99C4DQ');</script>
+    <!-- End Google Tag Manager -->
+        <!-- OG : END -->
+        
+
+        <script src="assets/js/lib/nouislider.min.js"></script>
+        <script src="assets/js/lib/wNumb.js"></script>
+        <script src="assets/js/lib/hammer.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/lib/nouislider.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+        <!-- Favicons : START -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="16x16">
+        <link rel="manifest" href="/assets/favicon/manifest.json">
+        <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#4ec9f2">
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
+        <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#4ec9f2">
+        <!-- Favicons : END -->
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body id="vehicule">
+    <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W99C4DQ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+        <!--[if lt IE 9]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <div class="container">
+                <div class="content cell">
+                    <a href="index.html"><h1 class="logo">Smart</h1></a>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <div class="content">
+                    <a href="index.html" class="back">< Retour</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <h2 class="title-centered" id="modele"></h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="container">
+                <div class="content content-vehicule">
+                    <div class="cell content-info">
+                        <div class="stage">
+                            <ul id="image-slider">
+                                <!--Liste dynamique via web service-->
+                            </ul>
+                        </div>
+                        <div class="stage-controller">
+                            <!--Liste dynamique via web service-->
+                        </div>                            
+                        <div class="info-vehicule cell">
+                            <strong class="price-vehicule"></strong>
+                            <strong class="finance-vehicule"></strong>
+                            <div class="spec-vehicule cell">
+                                <ul>
+                                    <!--Liste dynamique via web service-->
+                                </ul>
+                                <strong>Version : </strong>
+                            </div>
+                            <a href="#contact" class="btn btn-contact"><span>Contactez-nous</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content content-technical">
+                    <h2>Fiche technique </h2>
+                    <div class="content ">
+                        <ul class="cell option-list">
+                            <li><strong>Carburant / Énergie : </strong><span id="energy"></span></li>
+                            <li><strong>Boite de vitesse : </strong><span id="vitesse"></span></li>
+                            <li><strong>Date de 1ère MEC : </strong><span id="mec"></span></li>
+                            <li><strong>Nombre de places : </strong><span id="place"></span></li>
+                            <li><strong>Nombre de portes : </strong><span id="door"></span></li>
+                            <li><strong>Version : </strong><span id="version"></span></li>
+                            <li><strong>Puissance fiscale : </strong><span id="din"></span></li>
+                            <li><strong>Cylindrée : </strong><span id="cylindre"></span></li>
+                            <li><strong>Référence : </strong><span id="ref"></span></li>
+                        </ul>
+                        <div class="cell content-option">
+                            <strong>Options : </strong>
+                            <p id="option"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content content-financial">
+                    <h2>Financement</h2>
+                    <p id="finance"></p>
+                </div>
+                <div class="content content-localisation">
+                    <div class="cell">
+                        <h2>Venez l’essayer !</h2>
+                        <div id="map" class="map"></div>
+                        <div class="cell info-localisation">
+                            <h3 id="societe"></h3>
+
+                            <strong>COMMERCIAL :</strong>
+                            
+                            <p id="commercial-info"></p>
+
+
+                            <strong>ATELIER :</strong>
+                            <p id="atelier-info"></p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="content so-smart-financial">
+                    <h2>So'smart le label smart occasion</h2>
+                    <ul>
+                        <li>178 points de contrôle</li>
+                        <li>Entretien réalisé</li>
+                        <li>Véhicules prêts à partir</li>
+                        <li>Garantie 12 mois</li>
+                        <li>Essai possible</li>
+                        <li>Satisfait ou remboursé</li>
+                        <li>Assistance mobilité 24/7</li>
+                        <li>Offres sur mesure</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contact" class="container content-contact">
+                <div class="content">
+                    <h2>Contactez-nous</h2>
+                    <ul class="cell" id="commercial-contact">
+                    </ul>
+                    <div class="msgSend">
+                        <p>Merci. Votre demande a bien été enregistrée.</p>
+                        <p>Vous serez contacté(e) dans les meilleurs délais.</p>
+                    </div>
+                    <form id="formContact" action="" onsubmit="return false;">
+                        <div class="content-form cell">
+                            <div class="cell cell-large">
+                                <label for="VehicleReference">Véhicule</label>
+                                <input class="js-form-el" id="VehicleReference" type="text" disabled="disabled" value="">
+                            </div>
+                            <div class="cell">
+                                <label for="UserFirstName">Nom*</label>
+                                <input class="js-form-el" id="UserFirstName" type="text" required="required">
+                            </div>
+                            <div class="cell">
+                                <label for="UserLastName">Prénom*</label>
+                                <input class="js-form-el" id="UserLastName" type="text" required="required">
+                            </div>
+                            <div class="cell">
+                                <label for="UserPhoneNumber">Téléphone*</label>
+                                <input class="js-form-el" id="UserPhoneNumber" type="number" placeholder="Ex : 01 23 45 67 89" required="required">
+                            </div>
+                            <div class="cell">
+                                <label for="UserEmail">Email*</label>
+                                <input class="js-form-el" id="UserEmail" type="email" required="required" placeholder="Ex : votrenom@contact.com">
+                            </div>
+                            <div class="cell cell-large">
+                                <label for="Subject">Sujet</label>
+                                <input class="js-form-el" id="Subject" type="text">
+                            </div>
+                            <div class="cell cell-large">
+                                <label for="Message">Méssage</label>
+                                <textarea class="js-form-el" rows="10" name="" id="Message" maxlength="3000" placeholder="Jusqu’à 3000 caractères."></textarea>
+                            </div>
+                            <div class="cell cell-row">
+                                <input type="checkbox" class="js-form-el" id="optin" checked="">
+                                <label for="optin">Recevoir les lettres d'information</label>
+                            </div>
+                            <div class="cell cell-reverse">
+                                <span class="msgError">Oups ! Certains champs n'ont pas été rempli correctement.</span>
+                                <button type="submit" class="btn btn-submit">
+                                    <span>Envoyer</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>                       
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="content so-smart">
+                    <img src="assets/img/small-label-so-smart.jpg" alt="">
+                    <div class="cell">
+                        <h2>Le label SO'smart</h2>
+                        <p>Prenez le volant l’esprit libre avec les véhicules labellisés SO’smart. Le label de SO’smart c'est l'assurance de profiter en toute tranquillité de votre véhicule smart d’occasion.</p>
+                        <a href="#" class="btn"><span>En savoir plus</span></a>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="content">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank">Protection des données</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Mentions légales</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Cookies</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- Variable set by backend -->
+        
+        <script src="assets/js/bundle.js"></script>
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWFQERL_umZZdcznlsLuNV2d6Ui-10_Ts">
+    </script>
+    </body>
+</html>

@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Daimler Media Site</title>	
+		
+		<style type="text/css">
+				
+td, table, div {
+	font-size: 15px; line-height: 20px; font-family: Helvetica,  Arial, sans-serif; color:#000000; font-weight: normal;
+}
+
+a {
+	font-family: Helvetica,  Arial, sans-serif;
+	color: #000000;
+	text-decoration: underline;
+	transition: color 0.3s; 
+}
+.small a {
+	color: #00677f;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #7a7a7a;
+}
+
+
+input.button, table[cellspacing="4"] td[nowrap="nowrap"] a{
+	background: #000000;
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 15px 0 0 0;
+	color: #ffffff;
+	font-weight: bold;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	font-size: 12px;
+	line-height: 13px;
+	text-decoration: none;
+}
+
+.ctrwrap table, input.button{
+	opacity: 1;
+	transition: opacity 0.3s; 
+}
+.ctrwrap table:hover, input.button:hover{
+	opacity: 0.8;
+}
+
+@-ms-viewport {
+	width: device-width;
+}
+*{
+	font-size-adjust: none !important;
+	-webkit-text-size-adjust: 100%;
+}
+
+
+td.title, p.title{
+	font-size: 24px;
+	line-height: 28px;
+	font-family: Helvetica,  Arial, sans-serif;
+	color:#000000;
+	font-weight: normal;
+	text-decoration: none;
+}
+table[cellspacing="4"] td[class="text"]{
+	display: none;
+}
+
+form table[cellspacing="4"] td[class="text"]{
+	display: table-cell;
+}
+
+input.feld, select.feld, textarea.feld{
+	display: block;
+	padding: 5px 15px;
+	border: 1px solid #7A7A7A;
+	border-radius: 4px;
+	font-size: 15px;
+	height: 30px;
+	box-sizing: border-box;
+	color: #7A7A7A;
+	margin: 5px 0 5px 15px;
+	outline: 0;
+}
+textarea.feld{
+	height: auto;
+	margin:5px 0 0 0;
+}
+select.feld option{
+	padding: 5px;
+	font-size: 15px;
+	color: #000000;
+}
+
+
+			@media only screen and (max-width: 480px){
+
+	@-ms-viewport {
+		width: 320px;
+	}
+	
+	*{
+		font-size-adjust: none !important;
+		-webkit-text-size-adjust: 100%;
+	}
+	
+	
+	*[class="hide"], *[class="hide"] * {
+		display: none !important;
+	}
+	
+	*[class="outer"] {
+		width: 100% !important;
+	}
+	
+	*[class="full"], *[class="ctrwrap"] table {
+		width: 100% !important;
+	}
+	
+	*[class="nofloat"]{
+		width: 100% !important;
+		clear: both !important;
+		float: none !important;
+	}
+	*[class="nofloat"] td{
+		text-align: center !important;
+	}
+
+	*[class="inner"] {
+		width: 300px !important;
+	}
+	
+	*[class="side"], *[class="side"] img  {
+		width: 15px !important;
+	}
+	
+	*[class="h10"], *[class="h10"] img  {
+		height: 10px !important;
+	}
+	
+	*[class="content"] > img, *[class="content"] > table{
+		max-width: 90% !important;
+		height: auto !important;
+		float: none !important;
+		border:0 !important;
+		display: block !important;
+		margin: 10px auto  !important;
+	}
+	
+	*[class="content"] > table[class="ctrwrap"]{
+		max-width: 100% !important;
+		height: auto !important;
+		float: none !important;
+		border:0 !important;
+		display: table !important;
+		margin: 0  !important;
+	}
+	
+	
+	
+	
+	
+	*[class="mobilepic"], *[class="mobilepic"] img, *[class="mobilelogo"]  {
+		display:block !important;
+		max-height: none !important;
+		height: auto !important;
+		width: auto !important;
+		overflow: visible !important;
+	}
+	
+	*[class="mobilelogo"] {
+		background: url(http://local.media.daimler-france.fr//Assets/Email/_img/bg_logo.jpg) no-repeat #929292; 
+		background-size: 100% auto;
+		background-size: cover;
+		padding: 12px 0 !important;
+	}
+	
+	*[class="mobilelogo"] img {
+		display: block !important;
+		width: 115px !important;
+		margin: 0 auto !important;
+	}
+	
+	*[class="contitle"] {
+		font-size: 20px !important;
+		line-height: 24px !important;
+	}
+	
+	*[class="content"] *[class="mobilepic"] {
+		margin-bottom: 15px !important;
+	}
+	
+	
+	*[class="flink"]{
+		background: #000000 !important;
+		display: inline-block !important;
+		padding: 5px 10px !important;
+		margin: 15px 0 0 0 !important;
+		color: #ffffff !important;
+		font-weight: bold !important;
+		border-radius: 4px !important;
+	}
+	
+	
+	*[class="ctrtd"] {
+		background: none !important;
+	}
+	
+	*[class="ctrtd"] a {
+		background: #000000 !important;
+		display: inline-block !important;
+		padding: 9px 18px !important;
+		font-size: 14px !important;
+		border-radius: 4px !important;
+		min-width: 100px !important;
+	}
+	
+	
+	table[class="infotable"]  {
+		margin-left: 0 !important;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+			
+	
+		</style>
+		
+	</head>
+	<body style="margin:0; padding: 0; font-size: 15px; line-height: 20px; font-family: Helvetica,  Arial, sans-serif; color:#000000; font-weight: normal;;" bgcolor="#ffffff">
+<img src="http://local.media.daimler-france.fr//Assets/Email/_img/a31wG7jhGoV.gif" border="0" width="1" height="1" alt=" " style="display:block;">
+		
+		<table class="hide" width="700" style="width: 700px;" align="center" cellpadding="0" cellspacing="0" border="0"><tr>
+			<td style="height: 10px; line-height: 1px; font-size: 1px; border: 0;"><img src="http://local.media.daimler-france.fr//Assets/Email/_img/spacer_1x10.gif" width="1" height="10" border="0" alt="" style="display:block;"></td>
+		</tr></table>
+		<table class="hide" width="700" style="width: 700px;" align="center" cellpadding="0" cellspacing="0" border="0"><tr>
+			<td align="left" style="font-size: 11px; line-height: 14px; font-family: Helvetica,  Arial, sans-serif; color:#00000; font-weight: normal;">
+				
+			</td>
+			<td align="right" style="font-size: 11px; line-height: 14px; font-family: Helvetica,  Arial, sans-serif; color:#00000; font-weight: normal;">
+				
+				<table cellspacing="0" cellpadding="0" border="0"><tr>
+                    <!--Online-->
+					<td align="left" valign="middle" style="font-size: 11px; line-height: 14px; font-family: Helvetica,  Arial, sans-serif; color:#00000; font-weight: normal;">
+						<a href="@@linkOnline" style="font-size: 11px; line-height: 14px; font-family: Helvetica,  Arial, sans-serif; color:#00000; font-weight: normal; text-decoration: none;">Voir la version en ligne &nbsp;</a>
+					</td>
+                    <!--Online-->
+					<td align="right" valign="middle" style="line-height: 1px; font-size: 1px; border: 0;">
+						<a href="#" style="line-height: 1px; font-size: 1px; border: 0; text-decoration: none;"><img src="http://local.media.daimler-france.fr//Assets/Email/_img/arrow_pre.gif" alt="" border="0" style="border: 0;" /></a>
+					</td>
+				</tr></table>
+			</td>
+		</tr></table>
+		<table class="hide" width="700" style="width: 700px;" align="center" cellpadding="0" cellspacing="0" border="0"><tr>
+			<td style="height: 5px; line-height: 1px; font-size: 1px; border: 0;"><img src="http://local.media.daimler-france.fr//Assets/Email/_img/spacer_1x5.gif" width="1" height="5" border="0" alt="" style="display:block;"></td>
+		</tr></table>
+		
+		
+		<table class="outer" width="700" style="width: 700px;" align="center" cellpadding="0" cellspacing="0" border="0"><tr>
+			<td class="logo" style="line-height: 1px; font-size: 1px; border: 0;">
+				<!--[if !mso]><!-- -->
+				<div class="mobilelogo" style="display: none; font-size: 0; max-height: 0; width:0; line-height: 0; padding: 0; mso-hide: all; height: 0; overflow: hidden;">
+					<a href="http://www.media.daimler-france.fr/" style="line-height: 1px; font-size: 1px; border: 0;"><img src="http://local.media.daimler-france.fr//Assets/Email/_img/logo_mobil.png" border="0" alt="Daimler" /></a>
+				</div>
+				<!--<![endif]-->
+				<a href="http://www.media.daimler-france.fr/" style="line-height: 1px; font-size: 1px; border: 0;">
+				<img class="hide" src="http://local.media.daimler-france.fr//Assets/Email/_img/header_screen1_retina.jpg" border="0" width="700" height="63" alt="Daimler" />
+				</a>
+			</td>
+		</tr></table>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a name="content_1776283"></a>
+				
+	
+	<table class="outer"width="700" style="width: 700px;" align="center" cellpadding="0" cellspacing="0" border="0"><tr>
+		<td style="height: 40px; line-height: 1px; font-size: 1px; border: 0;"><img src="http://local.media.daimler-france.fr//Assets/Email/_img/spacer_1x40.gif" width="1" height="40" border="0" alt="" style="display:block;"></td>
+	</tr></table>
+	
+	
+	
+	
+	<table class="outer" width="700" style="width: 700px;" align="center" cellpadding="0" cellspacing="0" border="0"><tr>
+		<td class="side" style="width: 50px; line-height: 1px; font-size: 1px; border: 0;">&nbsp;</td>
+		<td class="contitle" align="left" style="font-size: 15px; line-height: 20px; font-family: Helvetica,  Arial, sans-serif; color:#000000; font-weight: normal;">
+			
+			
+			
+			<a href="http://manager.presspage.com/mercedes-benz-france/maybach-partenaire-officiel-du-louvre-a-paris/" target="_blank" style="font-size: 24px; line-height: 28px; font-family: Helvetica,  Arial, sans-serif; color:#000000; font-weight: normal; text-decoration: none;">Maybach, partenaire officiel du Louvre à Paris</a>
+			
+			
+			
+			<div style="line-height: 1px; font-size: 1px; border: 0;  height:1px;"><img src="http://local.media.daimler-france.fr//Assets/Email/_img/spacer_200x1.gif" width="200" height="1" border="0" alt="" style="display:block;"></div>
+			<span style="font-size: 11px; line-height: 14px; font-family: Helvetica,  Arial, sans-serif; color:#00000; font-weight: normal;">
+				01 Feb 2011
+				
+			</span>
+			
+			
+			
+			<div class="h10" style="line-height: 1px; font-size: 1px; border: 0;  height: 15px;"><img src="http://local.media.daimler-france.fr//Assets/Email/_img/spacer_200x15.gif" width="200" height="15" border="0" alt="" style="display:block;"></div>
+		</td>
+		<td class="side" style="width: 50px; line-height: 1px; font-size: 1px; border: 0;">&nbsp;</td>
+	</tr></table>
+	
+	
+	<table class="outer" width="700" style="width: 700px;" align="center" cellpadding="0" cellspacing="0" border="0"><tr>
+		<td class="side" style="width: 50px; line-height: 1px; font-size: 1px; border: 0;">&nbsp;</td>
+		
+		<td align="left" valign="top" class="hide" style="width: 200px; line-height: 1px; font-size: 1px; border: 0;">
+			<a href="#" style="line-height: 1px; font-size: 1px; border: 0;">
+				<img src="http://local.media.daimler-france.fr/Assets/ResizeImage/Car/1e38b26e-116f-4b32-a883-0d06edb9324d.jpg" border="0" width="200" alt=" " />
+			</a>
+		</td>
+		<td class="hide" style="width: 20px; line-height: 1px; font-size: 1px; border: 0;">&nbsp;</td>
+		
+		<td class="content" align="center" valign="top" style="font-size: 15px; line-height: 20px; font-family: Helvetica,  Arial, sans-serif; color:#000000; font-weight: normal;">
+			
+			
+			<!--[if !mso]><!-- -->
+			<div class="mobilepic" style="display: none; font-size: 0; max-height: 0; width:0; line-height: 0; padding: 0; mso-hide: all; height: 0; overflow: hidden;">
+				<a href="#" style="line-height: 1px; font-size: 1px; border: 0;">
+				<img src="http://local.media.daimler-france.fr//Assets/ResizeImage/Car/1e38b26e-116f-4b32-a883-0d06edb9324d.jpg" border="0" alt=" " />
+				</a>
+			</div>
+			<!--<![endif]-->
+			
+			<p style="text-align:left;Margin-top:0;Margin-bottom:0; padding-top:0; paffing-bottom:0;">
+			<UL><LI><p class=c2cClass3>Partenariat à long terme conclu jusqu'en 2013 entre Maybach et le Musée du Louvre</p></LI><LI><p class=c2cClass3>Mise à disponibilité exclusive de la surface d'exposition située sous la pyramide de verre </p></LI><LI><p class=c2cClass3>Exposition en alternance de sculptures d'artistes internationaux </p></LI><LI><p class=c2cClass3>Inauguration avec une nouvelle sculpture de Tony Cragg</p></LI></UL><p class=c2cClass3>Maybach poursuit sa mission de promotion de l'art international au plus haut niveau. A compter de 2011, Maybach sera la première marque automobile au monde à devenir le partenaire officiel du célèbre Musée du Louvre. A l'initiative de Maybach, des expositions en alternance de sculptures d'artistes contemporains mondialement reconnus seront organisées ces trois prochaines années dans l'espace d'exposition situé sous la fameuse pyramide de verre. Pour la première fois depuis sa construction en 1989, cet espace sera exploité pour des expositions artistiques. Il est inauguré aujourd'hui par le célèbre artiste contemporain britannique Tony Cragg, avec une nouvelle sculpture qui sera présentée au Louvre jusqu'en octobre 2011 dans le cadre de sa grande exposition. </p><p class=c2cClass3>« Nous nous réjouissons au plus haut point de la coopération qui s'engage avec cette institution artistique mondialement connue. La marque Maybach et le Louvre partagent en effet un sens profond de l'excellence, de l'exception et du respect de la tradition », déclare Patrick Marinoff, Global Brand Manager Maybach. « Ce partage de valeurs constitue la base solide d'une collaboration fructueuse qui a abouti à l'idée unique de présenter des œuvres d'art dans un espace qui n'avait jusqu'à présent jamais été exploité à cet effet. »</p><p class=c2cClass3><STRONG>Tony Cragg – un des sculpteurs les plus renommés de notre époque</STRONG></p><p class=c2cClass3>Grâce à sa collaboration avec la marque automobile de Stuttgart, le Louvre compte bien élargir son programme d'art contemporain. L'œuvre qui ouvrira le bal des expositions sous la pyramide de verre est une nouvelle sculpture monumentale de Tony Cragg, spécialement créée pour l'exposition du Louvre : Name der Skulptur einfügen>.Cinq autres œuvres seront présentées dans la Cour Marly et dans la Cour Puget. Maybach est le mécène principal à la fois de l'exposition du Louvre et de l'installation sous la pyramide de verre.</p><p class=c2cClass3>Diplômé du Royal College of Art de Londres, Tony Cragg vit et travaille à Wuppertal depuis 1977. Il a développé une large palette de techniques et apporté de nombreuses contributions enrichissantes aux débats actuels sur la sculpture. Ses œuvres sont des représentations complexes conçues à partir de matériaux naturels et d'objets du quotidien, qui constituent une appréhension abstraite du corps humain. Elles possèdent une vie intérieure impressionnante qui captive le spectateur et l'entraîne dans une expérience artistique vraiment fascinante. Tony Cragg a remporté le Turner Prize en 1988 et a été élu à la Royal Academy of Arts en 1994. Il a ouvert en 2008 un parc de sculptures à Wuppertal et occupe le poste de recteur de l'Académie des Beaux Arts de Düsseldorf depuis 2009. </p><p class=c2cClass3><STRONG>Le Louvre – le musée d'art le plus visité au monde </STRONG></p><p class=c2cClass3>Avec près de 8,5 millions de visiteurs chaque année, le Musée du Louvre est le musée d'art le plus visité et le troisième plus grand musée au monde, avec une superficie d'exposition de près de 65 000 m2. La collection du musée réunit quelque 380 000 œuvres, dont environ 36 000 sont exposées. L'origine des objets de grande valeur exposés s'étend de l'antiquité égyptienne, grecque et romaine à la peinture française du 15e au 19e siècle, en passant par la peinture italienne de la Renaissance et la peinture flamande des 16e et 17e siècles. </p><p class=c2cClass3><STRONG>Maybach – un engagement inconditionnel pour l'art contemporain de qualité</STRONG></p><p class=c2cClass3>Au cours des cinq dernières années, Maybach s'est forgé une place de choix dans l'univers international de l'art contemporain. Son engagement repose sur trois points essentiels : d'une part, le constructeur automobile de longue tradition encourage de grands artistes internationaux. C'est ainsi qu'est née en 2009 une coopération avec le célèbre photographe David LaChapelle et le designer Tim Berresheim. Maybach a également engagé récemment une collaboration avec le peintre, sculpteur et metteur en scène de grande renommée, Julian Schnabel. D'autre part, Maybach apporte son soutien à des institutions réputées de la scène artistique. Parmi ces actions figurent les partenariats à long terme avec la Fondation Beyeler, à Bâle, et désormais avec le Louvre, à Paris. En outre, Maybach est représentée à l'occasion d'importants événements artistiques, tels que les St. Moritz Art Masters, et offre à ses clients un accès privilégié à certaines expositions très prisées. Enfin, fidèle à la pensée du mentor de la Fondation Wilhelm & Karl Maybach, le constructeur s'investit dans un engagement à la fois artistique et social.</p>
+			</p>
+			
+			<table class="infotable" cellpadding="0" cellspacing="0" border="0"><tr><td class="small" style="line-height: 14px; font-size: 12px; color: #00677f; font-style: italic; ">
+			
+			
+				
+				<div style="line-height: 1px; font-size: 1px; border: 0;  height: 8px;"><img src="http://local.media.daimler-france.fr//Assets/Email/_img/spacer_200x8.gif" width="200" height="8" border="0" alt="" style="display:block;"></div>
+			
+			
+			
+			</td></tr></table>
+			
+			
+			
+			<div style="line-height: 1px; font-size: 1px; border: 0;  height: 14px;"><img src="http://local.media.daimler-france.fr//Assets/Email/_img/spacer_200x14.gif" width="200" height="14" border="0" alt="" style="display:block;"></div>
+			<table class="ctrwrap" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+				<td align="right" style="line-height: 1px; font-size: 1px; border: 0;">
+					
+					<table cellpadding="0" cellspacing="0" border="0"><tr>
+						<td class="hide" width="13" align="right" valign="top" style="line-height: 1px; font-size: 1px; border: 0;"><a href="#" style="line-height: 1px; font-size: 1px; border: 0; text-decoration: none;"><img src="http://local.media.daimler-france.fr//Assets/Email/_img/btt_l.gif" alt="" border="0" style="display: block;" width="13" height="25" /></a></td>
+						<td class="ctrtd" align="center" valign="middle" style="font-size: 12px; line-height: 14px; font-family: Helvetica,  Arial, sans-serif; color:#ffffff; font-weight: bold; text-decoration: none;" bgcolor="#000000">
+							<a href="http://manager.presspage.com/mercedes-benz-france/maybach-partenaire-officiel-du-louvre-a-paris/" target="_blank" style="font-size: 12px; line-height: 14px; font-family: Helvetica,  Arial, sans-serif; color:#ffffff; font-weight: bold; text-decoration: none; display: inline-block; height: 25px; line-height: 25px;">
+								    En savoir plus   
+							</a>
+						</td>
+						<td class="hide" width="23" align="left" valign="top" style="line-height: 1px; font-size: 1px; border: 0;"><a href="#" style="line-height: 1px; font-size: 1px; border: 0; text-decoration: none;"><img src="http://local.media.daimler-france.fr//Assets/Email/_img/btt_r.gif" alt="" border="0" style="display: block;" width="23" height="25" /></a></td>
+					</tr></table>
+					
+					
+				</td>
+			</tr></table>
+			
+		</td>
+		<td class="side" style="width: 50px; line-height: 1px; font-size: 1px; border: 0;">&nbsp;</td>
+	</tr></table>
+
+		
+
+		
+		<table class="outer" width="700" style="width: 700px;" align="center" cellpadding="0" cellspacing="0" border="0"><tr>
+			<td style="height: 60px; line-height: 1px; font-size: 1px; border: 0;"><img src="http://local.media.daimler-france.fr//Assets/Email/_img/spacer_1x60.gif" width="1" height="60" border="0" alt="" style="display:block;"></td>
+		</tr></table>
+		
+		
+		<table class="outer" bgcolor="#e6e6e6" width="700" style="width: 700px;" align="center" cellpadding="0" cellspacing="0" border="0"><tr>
+			<td style="height: 20px; line-height: 1px; font-size: 1px; border: 0;"><img src="http://local.media.daimler-france.fr//Assets/Email/_img/spacer_1x20.gif" width="1" height="20" border="0" alt="" style="display:block;"></td>
+		</tr></table>
+		
+		<table class="outer" bgcolor="#e6e6e6" width="700" style="width: 700px;" align="center" cellpadding="0" cellspacing="0" border="0"><tr>
+			<td class="side" style="width: 50px; line-height: 1px; font-size: 1px; border: 0;">&nbsp;</td>
+			<td align="left" style="font-size: 11px; line-height: 14px; font-family: Helvetica,  Arial, sans-serif; color:#00000; font-weight: normal;">
+				
+				<table class="nofloat" align="left" cellpadding="0" cellspacing="0" border="0"><tr>
+					<td style="font-size: 11px; line-height: 14px; font-family: Helvetica,  Arial, sans-serif; color:#00000; font-weight: normal;">
+						&copy; Daimler France | 
+						<a href="http://www.media.daimler-france.fr/" style="font-size: 11px; line-height: 14px; font-family: Helvetica,  Arial, sans-serif; color:#00000; font-weight: normal; text-decoration: none;">www.media.daimler-france.fr</a>
+					</td>
+				</tr></table>
+				
+				
+				<table class="nofloat" align="right" cellpadding="0" cellspacing="0" border="0"><tr>
+					<td style="font-size: 11px; line-height: 14px; font-family: Helvetica,  Arial, sans-serif; color:#00000; font-weight: normal;">
+						<a class="flink" href="http://www.media.daimler-france.fr/gestion-des-preferences?id=@UserID@" target="_blank" style="font-size: 11px; line-height: 14px; font-family: Helvetica,  Arial, sans-serif; color:#00000; font-weight: normal; text-decoration: none;">Préférences</a>
+						<span class="hide">&nbsp;&nbsp;&nbsp;</span>
+						<a class="flink" href="http://www.media.daimler-france.fr/gestion-des-preferences?id=@UserID@" target="_blank" style="font-size: 11px; line-height: 14px; font-family: Helvetica,  Arial, sans-serif; color:#00000; font-weight: normal; text-decoration: none;">Me désinscrire</a>
+					</td>
+				</tr></table>
+			</td>
+			<td class="side" style="width: 50px; line-height: 1px; font-size: 1px; border: 0;">&nbsp;</td>
+		</tr></table>
+		<table class="outer" bgcolor="#e6e6e6" width="700" style="width: 700px;" align="center" cellpadding="0" cellspacing="0" border="0"><tr>
+			<td style="height: 20px; line-height: 1px; font-size: 1px; border: 0;"><img src="http://local.media.daimler-france.fr//Assets/Email/_img/spacer_1x20.gif" width="1" height="20" border="0" alt="" style="display:block;"></td>
+		</tr></table>
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

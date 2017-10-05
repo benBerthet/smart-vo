@@ -1,0 +1,48 @@
+/* FORsmartBold */
+@font-face {
+  font-family: 'FORsmartBold';
+  src:  url('./fonts/FORsmartBold/FORsmartBold.eot');
+  src:  url('./fonts/FORsmartBold/FORsmartBold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/FORsmartBold/FORsmartBold.woff') format('woff'),
+        url('./fonts/FORsmartBold/FORsmartBold.ttf') format('truetype'),
+        url('./fonts/FORsmartBold/FORsmartBold.svg#forsmartbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* FORsmartLight */
+@font-face {
+  font-family: 'FORsmartLight';
+  src:  url('./fonts/FORsmartLight/FORsmartLight.eot');
+  src:  url('./fonts/FORsmartLight/FORsmartLight.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/FORsmartLight/FORsmartLight.woff') format('woff'),
+        url('./fonts/FORsmartLight/FORsmartLight.ttf') format('truetype'),
+        url('./fonts/FORsmartLight/FORsmartLight.svg#forsmartlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* FORsmartPicto */
+@font-face {
+  font-family: 'FORsmartPicto';
+  src:  url('./fonts/FORsmartPicto/FORsmartPicto.eot');
+  src:  url('./fonts/FORsmartPicto/FORsmartPicto.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/FORsmartPicto/FORsmartPicto.woff') format('woff'),
+        url('./fonts/FORsmartPicto/FORsmartPicto.ttf') format('truetype'),
+        url('./fonts/FORsmartPicto/FORsmartPicto.svg#forsmartpicto') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* FORsmartSpecial */
+@font-face {
+  font-family: 'FORsmartSpecial';
+  src:  url('./fonts/FORsmartSpecial/FORsmartSpecial.eot');
+  src:  url('./fonts/FORsmartSpecial/FORsmartSpecial.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/FORsmartSpecial/FORsmartSpecial.woff') format('woff'),
+        url('./fonts/FORsmartSpecial/FORsmartSpecial.woff2') format('woff2'),
+        url('./fonts/FORsmartSpecial/FORsmartSpecial.ttf') format('truetype'),
+        url('./fonts/FORsmartSpecial/FORsmartSpecial.svg#forsmartspecial') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

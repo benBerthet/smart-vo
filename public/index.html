@@ -1,0 +1,183 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>smart - Véhicule d'occasion</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta name="HandheldFriendly" content="true">
+        <!-- OG : START -->
+        <meta property="og:url" content="">
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <!-- og:image url must be ABSOLUTE -->
+        <meta property="og:image" content="http://">
+        <meta property="og:image:width" content="600">
+        <meta property="og:image:height" content="315">
+    <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore    (j,f);
+        })(window,document,'script','dataLayer','GTM-W99C4DQ');</script>
+    <!-- End Google Tag Manager -->
+        <!-- OG : END -->
+        <script src="assets/js/lib/nouislider.min.js"></script>
+        <script src="assets/js/lib/wNumb.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/lib/nouislider.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+        <!-- Favicons : START -->
+        <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png"> -->
+        <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="16x16">
+        <!-- <link rel="manifest" href="/assets/favicon/manifest.json">
+        <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#4ec9f2"> -->
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
+        <!-- <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#4ec9f2"> -->
+        <!-- Favicons : END -->
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body id="home">
+    <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W99C4DQ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+        <header>
+            <div class="container">
+                <div class="content cell">
+                    <a href="index.html"><h1 class="logo">Smart</h1></a>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <div class="content so-smart">
+                    <div class="cell cell-img"></div>
+                    <div class="cell">
+                        <h2>Le label SO'smart</h2>
+                        <p>Le label de SO’smart c'est l'assurance de profiter en toute tranquillité de votre véhicule smart d’occasion.</p>
+                        <a href="#" class="btn"><span>En savoir plus</span></a>                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="content mobil-change">
+                    <h2 class="title-centered">Trouver un véhicule</h2>
+                    <a href="#" class="btn open-search-mobil"><span>Rechercher</span></a>
+                </div>
+            </div>
+            <div id="search-bar" class="container search-bar">
+                <strong class="close-mobil">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path fill="#787878" d="M50.1 46.4L28.9 25.2l21-20.9L45.7.1l-20.9 21-21-21L.1 3.8l21 21L-.1 45.9l4.2 4.2 21.1-21.2 21.2 21.2"/></svg>
+                </strong>
+                <div class="search-mobil">
+                    <span class="js-search btn">Rechercher</span>                    
+                </div>
+                <div class="content-mobil">
+                    <div class="container-search">
+                        <div class="content cell">
+                            <div class="block">
+                                <div class="block-select">
+                                    <span>Modèle</span>
+                                    <ul class="list-model"></ul>
+                                    <input type="hidden" value="" id="modele">
+                                </div>
+                            </div>
+                            <div class="range-slider">
+                                <span>Prix</span>
+                                <input type="text" id="lower-price-value">
+                                <div class="range">
+                                    <div id="rangePrice"></div>    
+                                </div>
+                                <input type="text" id="upper-price-value">
+                            </div>
+                            <strong id="open-search" class="advanced-search">Recherche avancée <span>+</span></strong>
+                        </div>                    
+                    </div>
+                    <div id="search" class="container-advanced-search">
+                        <div class="container content-advanced-search">
+                            <div class="content cell">
+                                <div class="block">
+                                    <strong>Carburant</strong>
+                                    <div class="block-select">
+                                        <span></span>
+                                        <ul class="list-engine"></ul>
+                                        <input type="hidden" value="" id="carburant">
+                                    </div>
+                                </div>
+                                <div class="block block-centered block-mobil-large">
+                                    <div class="range-slider">
+                                        <span>Kilométrage</span>
+                                        <input type="text" id="lower-km-value">
+                                        <div class="range">
+                                            <div id="rangeKm"></div>    
+                                        </div>
+                                        <input type="text" id="upper-km-value">
+                                    </div>
+                                </div>
+                                <div class="block">
+                                    <strong>Distributeur</strong>
+                                    <div class="block-select">
+                                        <span></span>
+                                        <div class="list-pointOfSale scrollbar scrollbar-custom">
+                                            <ul class=" force-overflow"></ul>                                            
+                                        </div>
+                                        <input type="hidden" value="" id="distributeur">
+                                    </div>
+
+                                </div>
+                                <div class="block">
+                                    <strong>Boite</strong>
+                                    <div class="block-select">
+                                        <span></span>
+                                        <ul class="list-gearbox"></ul>
+                                        <input type="hidden" value="" id="boite">
+                                    </div>
+                                </div>
+                                <div class="block block-centered">
+                                    <label for="">Référence</label>
+                                    <input type="text" placeholder="Ex : 722033" id="reference" value="" maxlength="10">
+                                </div> 
+                                <div class="block hide-mobil">
+                                    <a href="#" class="js-search btn">
+                                        <span>Rechercher</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>                    
+                </div>
+                <div class="only-mobil overlay"></div>
+            </div>
+            <div class="container">
+                <div class="content list-vehicule"></div>
+            </div>
+
+        </section>
+        <footer>
+            <div class="container">
+                <div class="content">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank">Protection des données</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Mentions légales</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Cookies</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- Variable set by backend -->
+        
+        <script src="assets/js/bundle.js"></script>
+    </body>
+</html>
